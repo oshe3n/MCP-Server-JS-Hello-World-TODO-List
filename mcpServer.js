@@ -43,7 +43,6 @@ server.registerTool(
   },
   async (params) => {
     const { item } = params;
-    console.log("Adding todo item:", params);
     todos.push(item);
     return {
       content: [
@@ -99,3 +98,4 @@ server.registerTool(
 
 
 export { server };
+
